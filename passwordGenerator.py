@@ -35,20 +35,20 @@ num_symbols = int(input("How many symbols would you like?\n"))
 # Solution 1
 # the solution here print sets of letters first followed by set of numbers then set of symbols
 
-# password = ""
-# for i in range(1, num_letters + 1):
-#     random_letters = rand.choice(letters)
-#     password = password + random_letters
-#
-# for i in range(1, num_numbers + 1):
-#     random_numbers = rand.choice(numbers)
-#     password = password + random_numbers
-#
-# for i in range(1, num_symbols + 1):
-#     random_symbols = rand.choice(symbols)
-#     password = password + random_symbols
-#
-# print(password)
+password = ""
+for i in range(1, num_letters + 1):
+    random_letters = rand.choice(letters)
+    password = password + random_letters
+
+for i in range(1, num_numbers + 1):
+    random_numbers = rand.choice(numbers)
+    password = password + random_numbers
+
+for i in range(1, num_symbols + 1):
+    random_symbols = rand.choice(symbols)
+    password = password + random_symbols
+
+print(password)
 
 
 # Solution 2
