@@ -3,6 +3,7 @@
 # This program asks the user how many letters, numbers and symbols they want in the password and generates
 # a random password in that order e.g letter-numbers-symbols
 # there are two ways of solving this program the easy mode and hard mode
+# The first method i used to solve this was using three different for loops.
 
 import random as rand
 
