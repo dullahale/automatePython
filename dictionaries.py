@@ -48,3 +48,36 @@ for key in student_scores:
 
 # Don't change the code below
 print(student_grades)
+print()
+
+# Nesting of dictionaries
+travel_log = {
+    "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits": 12},
+    "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 3}
+}
+
+# Nesting dictionary in a List
+travel_log = [
+    {
+        "country": "France",
+        "cities_visited": ["Paris", "Lille", "Dijon"],
+        "total_visits": 12
+    },
+
+    {"country": "Germany",
+     "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
+     "total_visits": 3
+    }
+]
+
+#Write the function that will allow new countries to be added to the travel_log.
+def add_new_country(country_visited, times_visited, cities_visited):
+    new_country = {}
+    new_country["country"] = country_visited
+    new_country["visits"] = times_visited
+    new_country["cities"] = cities_visited
+    travel_log.append(new_country)
+
+#Do not change the code below
+add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+print(travel_log)
