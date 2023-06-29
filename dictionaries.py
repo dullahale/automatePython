@@ -67,17 +67,17 @@ travel_log = [
     {"country": "Germany",
      "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
      "total_visits": 3
-    }
+     }
 ]
 
-#Write the function that will allow new countries to be added to the travel_log.
+
+# Write the function that will allow new countries to be added to the travel_log.
 def add_new_country(country_visited, times_visited, cities_visited):
-    new_country = {}
-    new_country["country"] = country_visited
-    new_country["visits"] = times_visited
-    new_country["cities"] = cities_visited
+    new_country = {"country": country_visited, "visits": times_visited, "cities": cities_visited}
     travel_log.append(new_country)
 
-#Do not change the code below
+
+# Do not change the code below
 add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+add_new_country("Nigeria", 3, ["Abuja", "Kaduna", "Sokoto"])
 print(travel_log)
